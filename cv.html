@@ -3,21 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curriculum Vitae</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Emanuel Camacho | CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/0d6b8e9f09.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<h1>Curriculum Vitae</h1>
+<nav>
+    <div><strong>EMANUEL CAMACHO</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="#cv">CV</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+</nav>
 
-<div class="back-btn">
-    <a href="index.html" class="btn">← Back to Portfolio</a>
-</div>
+<section id="cv" class="section">
+    <h2>Curriculum Vitae</h2>
+    <div class="card">
+        <p>
+            You can view my full professional CV below.
+        </p>
+        <iframe src="files/CV.pdf"></iframe>
+        <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+</section>
 
-<iframe src="files/CV.pdf" title="Curriculum Vitae"></iframe>
+<section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+        <div class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:emanuel1902191@gmail.com">emanuel1902191@gmail.com</a></div>
+        <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/emanuel-camacho-05ab8a245" target="_blank">linkedin.com/in/emanuel-camacho</a></div>
+        <div class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/emanuelcamaerospace/" target="_blank">github.com/emanuelcamaerospace</a></div>
+    </div>
+</section>
 
-<a href="files/CV.pdf" download class="btn">Download PDF</a>
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){ entry.target.classList.add("visible"); }
+    });
+});
+document.querySelectorAll(".section, .card").forEach(el => {
+    el.classList.add("fade-in"); observer.observe(el);
+});
+</script>
 
 </body>
 </html>
