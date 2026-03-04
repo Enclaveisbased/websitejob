@@ -5,7 +5,8 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 });
-document.querySelectorAll(".section, .card").forEach(el => {
+
+document.querySelectorAll(".section, .card:not(.no-anim)").forEach(el => {
     el.classList.add("fade-in");
     observer.observe(el);
 });
