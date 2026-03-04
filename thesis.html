@@ -12,18 +12,112 @@
 <a href="index.html" class="btn" style="margin:30px;">← Back to Portfolio</a>
 
 <section class="section">
-    <h2>MSc Thesis – Propulsion & Aircraft Systems</h2>
+    <h2>MSc Thesis – Directed Energy Counter-UAV Systems</h2>
+
     <div class="card">
+        <h3>Executive Summary</h3>
         <p>
-            Ongoing research on advanced propulsion systems and aircraft system engineering. Will include:
+            The global proliferation of low-cost UAVs has introduced significant security and privacy risks, 
+            particularly in urban and conflict environments. Traditional counter-UAV solutions such as kinetic 
+            interception or RF jamming are often costly, legally constrained, or unsuitable for populated areas.
+        </p>
+        <p>
+            While modern high-energy laser systems neutralize drones through structural destruction, they 
+            require kilowatt-class power levels and complex hardware. This thesis proposes an alternative 
+            concept: suppressing UAV optical sensors using lower-power, high-precision lasers. 
+        </p>
+        <p>
+            The approach shifts complexity from laser power generation to tracking and control accuracy. 
+            A visually tracked UAV trajectory feeds a two-axis gimbal-mounted laser system, where 
+            alignment precision determines the achieved Time on Target (TOT). Through dynamic modelling, 
+            control design, and simulation, the feasibility of this concept is evaluated across realistic 
+            operational scenarios.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Structural overview and summary</h3>
+        <h4>1. Introduction</h4>
+
+        <h4>1.1 Motivation</h4>
+        <p>
+            The increasing accessibility of drone technology has created new security vulnerabilities 
+            worldwide, reinforced by their prominent use in modern conflicts. Urban and law enforcement 
+            scenarios demand countermeasures that minimize collateral damage while remaining economically 
+            sustainable.
+        </p>
+
+        <h4>1.2 Related Work</h4>
+        <p>
+            Existing research spans three primary subsystems:
         </p>
         <ul>
-            <li>Advanced turbomachinery design</li>
-            <li>System integration and performance optimization</li>
-            <li>Simulation and modeling of aircraft propulsion components</li>
+            <li><strong>Gimbal Dynamics:</strong> Modelled using Newton–Euler, Lagrange, or Kane formulations, 
+                each offering different advantages in handling nonlinearities and coupling effects.</li>
+            <li><strong>Visual Tracking & State Estimation:</strong> YOLO-based detection combined with 
+                monocular scaling for range estimation, refined using Extended Kalman Filtering to 
+                mitigate pixel jitter and localization noise.</li>
+            <li><strong>Laser Systems:</strong> High-energy laser applications typically focus on structural 
+                destruction (10–100 kW). This project instead investigates lower-power operation aimed 
+                at sensor dazzling or permanent optical damage.</li>
         </ul>
-        <p>Technical documentation will be added as the project progresses.</p>
+
+        <h4>1.3 Problem Overview</h4>
+        <p>
+            A UAV follows a predefined or evasive trajectory and is detected via a monocular vision system. 
+            Estimated position and velocity measurements drive a 2-DOF gimbal-mounted laser platform. 
+            Laser effectiveness depends on delivered irradiance, atmospheric attenuation, beam divergence, 
+            and incidence angle.
+        </p>
+        <p>
+            System success is quantified through Time on Target (TOT), representing the duration of 
+            sufficient alignment and energy transfer to the UAV’s optical sensor.
+        </p>
+
+        <h4>1.4 Research Objectives</h4>
+        <ul>
+            <li>Develop and compare three nonlinear gimbal dynamic models.</li>
+            <li>Integrate control strategies and sweeping protocols.</li>
+            <li>Incorporate realistic tracking noise and atmospheric laser effects.</li>
+            <li>Evaluate feasibility across varying laser power levels and engagement conditions.</li>
+            <li>Generate interception envelopes for nominal and evasive scenarios.</li>
+        </ul>
+
+        <h4>1.5 Thesis Structure</h4>
+        <ul>
+            <li><strong>Chapter 2:</strong> Theoretical modelling and control framework.</li>
+            <li><strong>Chapter 3:</strong> Simulation architecture and proposed work.</li>
+            <li><strong>Chapter 4:</strong> Evaluation and conclusions.</li>
+        </ul>
     </div>
+
+    <div class="card">
+        <h3>Thesis Introductory Document</h3>
+        <p>
+            Produced within the Thesis Introduction Module (1st Semester, 2025/26).
+        </p>
+        <a href="files/PIC2.pdf" class="btn" target="_blank">
+            Download Introductory Document (PDF)
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Abstract</h3>
+        <p>
+            Final abstract will be published upon completion of the full thesis.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Final Thesis Document</h3>
+        <p>
+            The complete MSc thesis will be made available here after submission.
+        </p>
+        <a href="documents/MSc_Thesis_Emanuel_Camacho.pdf" class="btn" target="_blank">
+            Download Full Thesis (PDF)
+        </a>
+    </div>
+
 </section>
 
 </body>
