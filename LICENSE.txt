@@ -1,0 +1,27 @@
+Copyright (c) 2026 Emanuel Camacho
+
+All Rights Reserved.
+
+This repository and all its contents, including but not limited to
+source code, design, layout, text, images, graphics, and other
+materials, are the exclusive property of the author.
+
+This material is provided for viewing and reference purposes only.
+
+No part of this repository may be copied, reproduced, modified,
+distributed, published, sublicensed, or used in any form without
+explicit written permission from the author.
+
+This prohibition includes, but is not limited to:
+
+- Copying the source code
+- Reusing the website design or layout
+- Redistributing the repository
+- Using the materials in personal, academic, or commercial projects
+- Creating derivative works based on this repository
+
+Unauthorized use of any part of this repository is strictly prohibited.
+
+For permission requests, please contact the author.
+
+© 2026 Emanuel Camacho. All rights reserved.
