@@ -8,6 +8,14 @@ The website serves as a central place to present my work, projects, and backgrou
 
 ---
 
+# Live Website
+
+The website is available at:
+
+https://emanuelcamaerospace.github.io/website/
+
+---
+
 # Overview
 
 This website is intended to provide:
@@ -28,13 +36,13 @@ To run the website locally:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/emanuelcamaerospace/website.git
 ```
 
 2. Navigate to the project folder
 
 ```bash
-cd yourrepository
+cd website
 ```
 
 3. Open the main file in your browser
@@ -52,9 +60,9 @@ Or run a local development server depending on your setup.
 Example structure:
 
 ```
-/assets        → images, icons, and other static files
-/css           → stylesheets
-/js            → JavaScript files
+/files         → PDF's and models used
+/images        → images used in the website
+style.css      → stylesheet
 /index.html    → main webpage
 ```
 
@@ -74,7 +82,7 @@ All rights reserved.
 
 This project and its contents may **not be copied, modified, distributed, or reused** without explicit permission from the author.
 
-See the **LICENSE.txt** file for full licensing terms.
+See the **LICENSE** file for full licensing terms.
 
 ---
 
